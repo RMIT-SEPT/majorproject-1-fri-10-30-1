@@ -1,17 +1,17 @@
 # RMIT SEPT 2020 Major Project
 
-# Group 00
+# Group 01
 
 ## Members
-* SURNAME, GivenName (sXXXX)
-* SURNAME, GivenName (sXXXX)
-* SURNAME, GivenName (sXXXX)
-* SURNAME, GivenName (sXXXX)
-* SURNAME, GivenName (sXXXX)
+GEORGE, Jamaine (s3660962)
+HADDAD, Jonathan James (s3722092)
+MITTERBACHER, Jonathon Bailey (s3601130)
+HOANG, Steven (s3600563)
+KOAY, Wen Shen (s3658845)
 
 ## Records
 
-* Github repository : https://github.com/RMIT-SEPT/MajorProject/Groupx
+* Github repository : https://github.com/RMIT-SEPT/majorproject-1-fri-10-30-1
 * ClickUp Workspace : https://app.clickup.com/xxxx/yyyy
 
 
