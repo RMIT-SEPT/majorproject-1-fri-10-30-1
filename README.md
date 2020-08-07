@@ -5,7 +5,7 @@
 ## Members
   - GEORGE, Jamaine (s3660962)
   - HADDAD, Jonathan James (s3722092)
-  - MITTERBACHER, Jonathon Bailey (s3601130)
+  - MITTERBACHER, Jonathon Bailey (s3784464)
   - HOANG, Steven (s3600563)
   - KOAY, Wen Shen (s3658845)
 
