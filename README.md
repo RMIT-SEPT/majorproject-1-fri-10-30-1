@@ -12,7 +12,8 @@
 ## Records
 
 * Github repository : https://github.com/RMIT-SEPT/majorproject-1-fri-10-30-1
-* ClickUp Workspace : https://app.clickup.com/xxxx/yyyy
+* ClickUp Workspace : N/A (Using Jira)
+* Jira Workspace    : https://septgroup1.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=SP&view=planning&selectedIssue=SP-11&issueLimit=100
 
 
 ## Code documentation
