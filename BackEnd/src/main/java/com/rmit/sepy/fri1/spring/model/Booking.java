@@ -18,7 +18,7 @@ public class Booking {
        date as integers i.e. 22/08/2020 -> 220820
        add booking count i.e. 3rd booking add 2 to id
      */
-    private long bookingId;
+    private Integer bookingId;
     private String bookingName;
     private String workerName;
     private String location;
@@ -30,8 +30,8 @@ public class Booking {
     public Booking(){
     }
 
-    public Long getId() {return bookingId; }
-    public void setId(Long bookingId) { this.bookingId=bookingId; }
+    public Integer getId() {return bookingId; }
+    public void setId(Integer bookingId) { this.bookingId=bookingId; }
 
     public String getName() {return bookingName; }
     public void setId(String bookingName) { this.bookingName=bookingName; }
