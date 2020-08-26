@@ -53,3 +53,7 @@ button:hover {
     background-color: #19314e;
     font-weight     : bolder;
 }
+
+#content{
+    display: none;
+}

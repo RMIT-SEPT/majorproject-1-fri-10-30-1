@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Booking - SEPT</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,21 +14,63 @@
     <div>
         <h2>Booking</h2>
         <!-- add JS/React functions to respective 'onclick' properties -->
-        <button id="serviceButton" class="bookType" onclick="changeColour('serviceButton')">Book by Service</button> <!-- redirect to book by service page -->
-        <button id="personButton" class="bookType" onclick="changeColour('personButton')">Book by Person</button> <!-- redirect to book by person page -->
+        <button id="serviceButton" class="bookType" onclick="createContent('serviceButton')">Book by Service</button>
+        <!-- redirect to book by service page -->
+        <button id="personButton" class="bookType" onclick="createContent('personButton')">Book by Person</button>
+        <!-- redirect to book by person page -->
     </div>
-    
+
     <script>
-        function changeColour(buttonId){
-            if(buttonId == "serviceButton"){
+        function createContent(buttonId) {
+            var serviceBtn = "serviceButton";
+            var personBtn = "personButton";
+            // make content visible
+            document.getElementById("content").style.display= "inline-block";
+
+            // if book by Service
+            if (buttonId == serviceBtn) {
+                // set "Book by Service" button as selected
                 document.getElementById(buttonId).className = "selectedButton";
-                document.getElementById("personButton").className = "bookType";
+                // reset "Book by Person" button to non-selected
+                document.getElementById(personBtn).className = "bookType";
+
+                document.getElementById("searchType").innerHTML = "Service";
             }
-            else{
+
+            // if book by Person
+            else if (buttonId == personBtn){
+                // set "Book by Person" button as selected
                 document.getElementById(buttonId).className = "selectedButton";
-                document.getElementById("serviceButton").className = "bookType";
+                // reset "Book by Service" button to non-selected
+                document.getElementById(serviceBtn).className = "bookType";
+
+                document.getElementById("searchType").innerHTML = "Person";
             }
         }
+
+        function populateDropdown(){
+            var tempValues = ["service1", "service2", "service3"];
+            document.getElementById("dropdown");
+        }
+
+        function populateTable(){
+            var table = document.getElementById("sessionTable");
+
+            var tbody = document.createElement('tbody');
+            table.appendChild(tbody);
+
+            // QUERY BOOKING DATA of all bookingName that matche the value of the dropdown box 
+            // for each value in the array, create a new row and append to table
+        }
     </script>
+
+    <div id="content">
+        <h6 id="searchType">heading sample</h6>
+        <select name="dropdown" id="dropdown-list"></select>
+        <table id="sessionTable"></table>
+        <button>Create Booking</button>
+    </div>
+
 </body>
+
 </html>
