@@ -37,7 +37,7 @@ p{
 }
 
 button{
-    margin-bottom: 10px;
+    margin: 0 3% 10px 3%;
     min-width: 250px;
     min-height: 50px;
     font-size: 20px;
@@ -48,4 +48,8 @@ button{
 
 button:hover{
     background-color: #284f7e;
+}
+
+.bookType{
+
 }
