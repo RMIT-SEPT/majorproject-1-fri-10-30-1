@@ -48,8 +48,9 @@ button{
 
 button:hover{
     background-color: #284f7e;
+    font-weight: bolder;
 }
-
-.bookType{
-
+.bookType:focus{
+    background-color: #010050;
+    font-weight: bolder;
 }
