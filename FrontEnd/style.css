@@ -14,7 +14,7 @@ h1{
 
 h2 {
     font-style : normal;
-    font-size  : 64px;
+    font-size  : 70px;
     line-height: 52px;
     /* identical to box height */
 
@@ -27,13 +27,13 @@ h2 {
 
 p{
     font-style: normal;
-    font-size: 20px;
+    font-size: 26px;
     /* identical to box height */
 
     text-align: center;
-
     color: #3667A2;
 
+    margin-bottom: 2%;
 }
 
 button{
