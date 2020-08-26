@@ -30,6 +30,7 @@ CREATE TABLE `booking` (
   `startDate` date NOT NULL,
   `startTime` datetime NOT NULL,
   `endTime` datetime NOT NULL,
+  'booked' boolean NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -40,7 +41,7 @@ CREATE TABLE `booking` (
 
 LOCK TABLES `booking` WRITE;
 /*!40000 ALTER TABLE `booking` DISABLE KEYS */;
-INSERT INTO `booking` VALUES (1,'Scuba Test','Jono','Geelong','2020-08-25','2020-08-25 14:58:23','2020-08-25 16:58:26');
+INSERT INTO `booking` VALUES (1,'Scuba Test','Jono','Geelong','2020-08-25','2020-08-25 14:58:23','2020-08-25 16:58:26',false);
 /*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
