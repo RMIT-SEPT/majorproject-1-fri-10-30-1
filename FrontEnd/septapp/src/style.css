@@ -56,4 +56,24 @@ button:hover {
 
 #content{
     display: none;
+    width: 60%;
+    text-align: left;
+    align-items: left;
+    background: rgb(235, 235, 235);
+    margin: 1% 0 0 0;
 }
+h6{
+    margin: 10px 0 8px 10px;
+    font-size: 25px;
+}
+#dropdown{
+    margin: 10px 0 0 10px;
+    min-width: 250px;
+    width: 30%;
+    min-height: 45px;
+    font-size: 30px;
+}
+#createBooking{
+    margin: 20px 10px 10px 10px;
+}
+
