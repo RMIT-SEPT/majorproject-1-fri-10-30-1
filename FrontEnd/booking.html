@@ -13,8 +13,21 @@
     <div>
         <h2>Booking</h2>
         <!-- add JS/React functions to respective 'onclick' properties -->
-        <button class="bookType" onclick=>Book by Service</button> <!-- redirect to book by service page -->
-        <button class="bookType" onclick=>Book by Person</button> <!-- redirect to book by person page -->
+        <button id="serviceButton" class="bookType" onclick="changeColour('serviceButton')">Book by Service</button> <!-- redirect to book by service page -->
+        <button id="personButton" class="bookType" onclick="changeColour('personButton')">Book by Person</button> <!-- redirect to book by person page -->
     </div>
+    
+    <script>
+        function changeColour(buttonId){
+            if(buttonId == "serviceButton"){
+                document.getElementById(buttonId).className = "selectedButton";
+                document.getElementById("personButton").className = "bookType";
+            }
+            else{
+                document.getElementById(buttonId).className = "selectedButton";
+                document.getElementById("serviceButton").className = "bookType";
+            }
+        }
+    </script>
 </body>
 </html>

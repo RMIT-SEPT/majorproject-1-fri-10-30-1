@@ -49,7 +49,7 @@ button:hover {
     cursor: pointer;
 }
 
-.bookType:focus {
+.selectedButton{
     background-color: #19314e;
     font-weight     : bolder;
 }
