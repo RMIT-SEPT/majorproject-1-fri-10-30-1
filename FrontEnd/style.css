@@ -1,15 +1,15 @@
-html{
-    text-align: center;
-    background: #F2F2F2;
+html {
+    text-align : center;
+    background : #F2F2F2;
     font-family: sans-serif;
     font-weight: 0;
 }
 
-h1{
+h1 {
     text-align: left;
-    font-size: 80px;
-    margin: 3% 0 0 3%;
-    color: #3667A2;
+    font-size : 80px;
+    margin    : 3% 0 0 3%;
+    color     : #3667A2;
 }
 
 h2 {
@@ -25,32 +25,31 @@ h2 {
     color: #3667A2;
 }
 
-p{
+p {
     font-style: normal;
-    font-size: 26px;
-    /* identical to box height */
-
+    font-size : 26px;
     text-align: center;
-    color: #3667A2;
-
+    color     : #3667A2;
     margin-bottom: 2%;
 }
 
-button{
-    margin: 0 3% 10px 3%;
-    min-width: 250px;
-    min-height: 50px;
-    font-size: 20px;
+button {
+    margin          : 0 3% 10px 3%;
+    min-width       : 250px;
+    min-height      : 50px;
+    font-size       : 20px;
     background-color: #3667A2;
-    color: white;
-    border-radius: 10px;
+    color           : white;
+    border-radius   : 5px;
+    border          : black solid 1px;
 }
 
-button:hover{
+button:hover {
     background-color: #284f7e;
-    font-weight: bolder;
+    cursor: pointer;
 }
-.bookType:focus{
-    background-color: #010050;
-    font-weight: bolder;
+
+.bookType:focus {
+    background-color: #19314e;
+    font-weight     : bolder;
 }
