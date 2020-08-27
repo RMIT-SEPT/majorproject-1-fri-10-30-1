@@ -16,10 +16,10 @@ function App() {
     <Router>
     <div>
      <Header/>
-     <Route exact path="/dashboard" component={Dashboard} />
-     <Route exact path="/addPerson" component={AddPerson} />
-     <Route exact path="/booking" component={Booking} />
-     <Route exact path="/welcome" component={Welcome} />
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/addPerson" component={AddPerson} />
+        <Route exact path="/booking" component={Booking} />
     </div>
     </Router>
     </Provider>
