@@ -20,16 +20,28 @@ import React, { Component } from 'react'
                                 Dashboard
                             </a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/welcome">
+                                Welcome
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/booking">
+                                Booking
+                            </a>
+                        </li>
                     </ul>
     
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link " href="register.html">
+                            {/*<a className="nav-link " href="register.html">*/}
+                            <a className="nav-link " href="booking.html">
                                 Sign Up
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="login.html">
+                            {/*<a className="nav-link" href="login.html">*/}
+                            <a className="nav-link" href="welcome.html">
                                 Login
                             </a>
                         </li>
