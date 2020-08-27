@@ -33,7 +33,9 @@ public class Booking {
         this.workerName = workerName;
     }
 
+    public Booking() {
 
+    }
 
     public Integer getId() {return bookingId; }
     public void setId(Integer bookingId) { this.bookingId=bookingId; }
