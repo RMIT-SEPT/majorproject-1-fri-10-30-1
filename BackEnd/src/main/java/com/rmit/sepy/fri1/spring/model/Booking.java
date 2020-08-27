@@ -27,8 +27,13 @@ public class Booking {
     private Time startTime;
     private Time endTime;
 
-    public Booking(){
+    public Booking(Integer bookingId, String bookingName, String workerName) {
+        this.bookingId = bookingId;
+        this.bookingName = bookingName;
+        this.workerName = workerName;
     }
+
+
 
     public Integer getId() {return bookingId; }
     public void setId(Integer bookingId) { this.bookingId=bookingId; }
