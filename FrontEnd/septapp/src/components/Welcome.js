@@ -8,8 +8,9 @@ class Welcome extends Component {
             <div>
                 <h2>Welcome</h2>
                 <p>Online Appointment Booking System</p>
-                <button>Register</button>
                 <button>Login</button>
+                <br></br>
+                <button>Register</button>
             </div>
         )
     }

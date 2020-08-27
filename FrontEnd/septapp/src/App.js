@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import Dashboard from './components/Dashboard';
 import Booking from './components/Booking';
 import Welcome from './components/Welcome';

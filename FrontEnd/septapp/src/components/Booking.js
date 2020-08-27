@@ -7,6 +7,7 @@ class Booking extends Component {
         return (
             <div>
                 <h2>Booking</h2>
+                {/*<p>making space</p>*/}
                 <button id="serviceButton" className="bookType" onClick="createContent('serviceButton')">
                     Book by Service
                 </button>
