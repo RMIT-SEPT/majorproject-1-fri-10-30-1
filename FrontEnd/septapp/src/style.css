@@ -56,12 +56,10 @@ button:hover {
 }
 
 #content{
-    display: none;
-    width: 60%;
-    text-align: left;
-    align-items: left;
-    background: rgb(235, 235, 235);
-    margin: 1% 0 0 0;
+    /*display: none;*/
+    /*width: 60%;*/
+    text-align: center;
+    align-items: center;
 }
 h6{
     margin: 10px 0 8px 10px;
@@ -76,5 +74,30 @@ h6{
 }
 #createBooking{
     margin: 20px 10px 10px 10px;
+}
+
+table{
+    font-size: 25px;
+    border-color: #284f7e;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:hover{
+    background-color: lightsteelblue;
+    color: white;
+    cursor: pointer;
+}
+
+td{
+    text-align: left;
+    padding: 4px 4px 4px 1%;
+    border: solid 2px #284f7e;
+    margin-left: 50px;
+}
+
+.placeholder{
+    display: none;
 }
 

@@ -7,20 +7,20 @@ class Booking extends Component {
         return (
             <div>
                 <h2>Booking</h2>
-                {/*<p>making space</p>*/}
+
+                <a href="/byService">
                 <button id="serviceButton" className="bookType" onClick="createContent('serviceButton')">
                     Book by Service
                 </button>
+                </a>
+
+                <a href="/byPerson">
                 <button id="personButton" className="bookType" onClick="createContent('personButton')">
                     Book by Person
                 </button>
-
-                <div id="content">
-                    <select name="dropdown" id="dropdown"></select>
-                    <table id="sessionTable"></table>
-                    <button id="createBooking">Create Booking</button>
-                </div>
+                </a>
             </div>)
+
         let serviceBtn = "serviceButton";
         let personBtn = "personButton";
 
