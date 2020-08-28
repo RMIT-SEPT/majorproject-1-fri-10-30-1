@@ -6,19 +6,21 @@ class Booking extends Component {
     render() {
         return (
             <div>
-                <h2>Booking</h2>
+                <div class="container-content">
+                    <h2>Booking</h2>
 
-                <a href="/byService">
-                <button id="serviceButton" className="bookType" onClick="createContent('serviceButton')">
-                    Book by Service
-                </button>
-                </a>
+                    <a href="/byService">
+                    <button id="serviceButton" className="bookType" onClick="createContent('serviceButton')">
+                        Book by Service
+                    </button>
+                    </a>
 
-                <a href="/byPerson">
-                <button id="personButton" className="bookType" onClick="createContent('personButton')">
-                    Book by Person
-                </button>
-                </a>
+                    <a href="/byPerson">
+                    <button id="personButton" className="bookType" onClick="createContent('personButton')">
+                        Book by Person
+                    </button>
+                    </a>
+                </div>
             </div>)
 
         let serviceBtn = "serviceButton";

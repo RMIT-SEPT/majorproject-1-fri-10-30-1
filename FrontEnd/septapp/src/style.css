@@ -76,6 +76,15 @@ h6{
     margin: 20px 10px 10px 10px;
 }
 
+.redirect{
+    /*text-align: right;*/
+    font-size: 18px;
+}
+
+.container-content{
+    /*width: 70%*/
+}
+
 table{
     font-size: 25px;
     border-color: #284f7e;
