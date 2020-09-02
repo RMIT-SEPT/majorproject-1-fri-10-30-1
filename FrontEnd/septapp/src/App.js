@@ -14,6 +14,9 @@ import Booking from './components/Booking';
 import Welcome from './components/Welcome';
 import ByPerson from "./components/Bookings/ByPerson";
 import ByService from "./components/Bookings/ByService";
+import Services from "./components/Bookings/Services";
+import People from "./components/Bookings/People";
+import Availability from "./components/Bookings/Availability";
 
 function App() {
   return (
@@ -24,9 +27,16 @@ function App() {
         <Route exact path="/" component={Welcome} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/addPerson" component={AddPerson} />
-        <Route exact path="/booking" component={Booking} />
-        <Route exact path="/byPerson" component={ByPerson} />
-        <Route exact path="/byService" component={ByService} />
+
+        {/*Old booking process*/}
+        {/*<Route exact path="/booking" component={Booking} />*/}
+        {/*<Route exact path="/byPerson" component={ByPerson} />*/}
+        {/*<Route exact path="/byService" component={ByService} />*/}
+
+        {/*New Booking process*/}
+        <Route exact path="/booking" component={Services} />
+        <Route exact path="/people" component={People} />
+        <Route exact path="/availability" component={Availability} />
     </div>
     </Router>
     </Provider>

@@ -106,7 +106,23 @@ td{
     margin-left: 50px;
 }
 
+td a{
+    display: block;
+    color: black;
+}
+
+td a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: lightsteelblue;
+}
+
 .placeholder{
     display: none;
 }
 
+div.bookingData{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
