@@ -5,6 +5,10 @@ html {
     font-weight: 0;
 }
 
+body{
+    text-align: center;
+}
+
 h1 {
     text-align: left;
     font-size : 80px;
@@ -15,8 +19,6 @@ h1 {
 h2 {
     font-style : normal;
     font-size  : 70px;
-    line-height: 52px;
-    /* identical to box height */
 
     align-items: center;
     text-align : center;
@@ -30,11 +32,10 @@ p {
     font-size : 26px;
     text-align: center;
     color     : #3667A2;
-    margin-bottom: 2%;
 }
 
 button {
-    margin          : 0 3% 10px 3%;
+    margin          : 10px 3% 10px 3%;
     min-width       : 250px;
     min-height      : 50px;
     font-size       : 20px;
@@ -55,12 +56,10 @@ button:hover {
 }
 
 #content{
-    display: none;
-    width: 60%;
-    text-align: left;
-    align-items: left;
-    background: rgb(235, 235, 235);
-    margin: 1% 0 0 0;
+    /*display: none;*/
+    /*width: 60%;*/
+    text-align: center;
+    align-items: center;
 }
 h6{
     margin: 10px 0 8px 10px;
@@ -77,3 +76,53 @@ h6{
     margin: 20px 10px 10px 10px;
 }
 
+.redirect{
+    /*text-align: right;*/
+    font-size: 18px;
+}
+
+.container-content{
+    /*width: 70%*/
+}
+
+table{
+    font-size: 25px;
+    border-color: #284f7e;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:hover{
+    background-color: lightsteelblue;
+    color: white;
+    cursor: pointer;
+}
+
+td{
+    text-align: left;
+    padding: 4px 4px 4px 1%;
+    border: solid 2px #284f7e;
+    margin-left: 50px;
+}
+
+td a{
+    display: block;
+    color: black;
+}
+
+td a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: lightsteelblue;
+}
+
+.placeholder{
+    display: none;
+}
+
+div.bookingData{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}

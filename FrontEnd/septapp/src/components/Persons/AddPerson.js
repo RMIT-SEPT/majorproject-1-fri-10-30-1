@@ -13,7 +13,6 @@ class AddPerson extends Component {
     }; 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    
         }
 
     onChange(e){
@@ -28,7 +27,6 @@ class AddPerson extends Component {
             start_date:this.state.start_date,
             end_date: this.state.end_date  
         }
-
         console.log(newPerson);
     }
     render() {

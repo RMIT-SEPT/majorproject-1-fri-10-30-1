@@ -3,7 +3,7 @@ package com.rmit.sepy.fri1.spring.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import com.rmit.sepy.fri1.spring.model.Booking;
-import com.rmit.sepy.fri1.spring.repository.BookingRepository;
+//import com.rmit.sepy.fri1.spring.repository.BookingRepository;
 import java.util.List;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 //https://spring.io/guides/gs/accessing-data-mysql/
 @RestController
 public class BookingController {
-    @Autowired
-    private BookingRepository bookingRepository;
+//    @Autowired
+//    private BookingRepository bookingRepository;
     @GetMapping("/booking")
     public List<Booking> getAllbookings() {
         //Returns hardcoded data, a real world application would return from the database
@@ -44,10 +44,10 @@ public class BookingController {
         System.out.println("Saving booking information");
     }
 
-//grab all of the bookings from the mysql server
-    @GetMapping(path="/all")
-    public @ResponseBody Iterable<Booking> getAllBookings() {
-        // This returns a JSON or XML with the users
-        return bookingRepository.findAll();
-    }
+////grab all of the bookings from the mysql server
+//    @GetMapping(path="/all")
+//    public @ResponseBody Iterable<Booking> getAllBookings() {
+//        // This returns a JSON or XML with the users
+//        return bookingRepository.findAll();
+//    }
 }
