@@ -6,6 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.Date;
 import java.sql.Time;
+import javax.validation.constraints.NotBlank;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+import javax.persistence.*;
 
 @Entity
 public class Booking {
@@ -18,30 +22,32 @@ public class Booking {
        date as integers i.e. 22/08/2020 -> 220820
        add booking count i.e. 3rd booking add 2 to id
      */
+    @Column(name = "id")
+    @NotBlank(message="id is required")
     private Integer bookingId;
+    @NotBlank(message="name is required")
     private String bookingName;
-    private String workerName;
-    private String location;
 
+    @NotBlank(message="worker name is required")
+    private String workerName;
+    @NotBlank(message="location is required")
+    private String location;
+    @Column(name="startDate")
     private Date date;
-    private Time startTime;
-    private Time endTime;
+   @JsonFormat(pattern="yyyy-MM-dd HH:mm")
+    private int startTime;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm")
+    private int endTime;
 
     public Booking() {
 
-    }
-
-    public Booking(Integer bookingId, String bookingName, String workerName) {
-        this.bookingId = bookingId;
-        this.bookingName = bookingName;
-        this.workerName = workerName;
     }
 
 
     public Integer getId() {return bookingId; }
     public void setId(Integer bookingId) { this.bookingId=bookingId; }
 
-    public String getName() {return bookingName; }
+    public String getBookingName() {return bookingName; }
     public void setId(String bookingName) { this.bookingName=bookingName; }
 
     public String getWorkerName() {return workerName; }
@@ -53,10 +59,10 @@ public class Booking {
     public Date getDate() {return date; }
     public void setDate(Date date) { this.date=date; }
 
-    public Time getStartTime() {return startTime; }
-    public void setStartTime(Time startTime) { this.startTime=startTime; }
+    public int getStartTime() {return startTime; }
+    public void setStartTime(int startTime) { this.startTime=startTime; }
 
-    public Time getEndTime() {return endTime; }
-    public void setEndTime(Time endTime) { this.endTime=endTime; }
+    public int getEndTime() {return endTime; }
+    public void setEndTime(int endTime) { this.endTime=endTime; }
 
 }
