@@ -5,7 +5,7 @@ class Availability extends Component {
         return (
             <div id="content">
                 <div className="container-content">
-                    <h2>People</h2>
+                    <h2>Available Times</h2>
                     {/*<h6 class="redirect">Wrong page? <a href="byService">Book by Service</a></h6>*/}
                     <br></br><br></br>
 
