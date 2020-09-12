@@ -1,13 +1,16 @@
 package com.rmit.sepy.fri1.spring.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.sql.Date;
 import java.sql.Time;
 
 @Entity
+@table(name = "booking")
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,13 +21,27 @@ public class Booking {
        date as integers i.e. 22/08/2020 -> 220820
        add booking count i.e. 3rd booking add 2 to id
      */
-    private Integer bookingId;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(name = "bookingName")
     private String bookingName;
+
+    @Column(name = "workerName")
     private String workerName;
+
+    @Column(name = "location")
     private String location;
 
+    @Column(name = "startDate")
     private Date date;
+
+    @Column(name = "startTime")
     private Time startTime;
+
+    @Column(name = "endTime")
     private Time endTime;
 
     public Booking() {
@@ -32,6 +49,7 @@ public class Booking {
     }
 
     public Booking(Integer bookingId, String bookingName, String workerName) {
+        super();
         this.bookingId = bookingId;
         this.bookingName = bookingName;
         this.workerName = workerName;
@@ -41,8 +59,8 @@ public class Booking {
     public Integer getId() {return bookingId; }
     public void setId(Integer bookingId) { this.bookingId=bookingId; }
 
-    public String getName() {return bookingName; }
-    public void setId(String bookingName) { this.bookingName=bookingName; }
+    public String getBookingName() {return bookingName; }
+    public void setBookingName(String bookingName) { this.bookingName=bookingName; }
 
     public String getWorkerName() {return workerName; }
     public void setWorkerName(String workerName) { this.workerName=workerName; }
