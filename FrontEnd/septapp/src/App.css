@@ -9,6 +9,10 @@ body{
     text-align: center;
 }
 
+html,body{
+    height : 100%;
+}
+
 h1 {
     text-align: left;
     font-size : 80px;
@@ -35,7 +39,7 @@ p {
 }
 
 button {
-    margin          : 10px 3% 10px 3%;
+    margin          : 10px 0 10px 0;
     min-width       : 250px;
     min-height      : 50px;
     font-size       : 20px;
@@ -81,10 +85,6 @@ h6{
     font-size: 18px;
 }
 
-.container-content{
-    /*width: 70%*/
-}
-
 table{
     font-size: 25px;
     border-color: #284f7e;
@@ -125,4 +125,24 @@ div.bookingData{
     width: 70%;
     margin: auto;
     text-align: left;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: .5%;
+}
+
+.footer a {
+    padding: 5px;
+}
+
+.footer a:hover {
+    background-color: rgb(56, 56, 56);
+    border-radius   : 10px;
 }
