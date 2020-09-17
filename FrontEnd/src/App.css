@@ -93,15 +93,16 @@ table{
     margin-right: auto;
 }
 
-tr:hover{
+td a:hover, tr:hover{
     background-color: lightsteelblue;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 td{
     text-align: left;
-    padding: 4px 4px 4px 1%;
+    padding: 0;
     border: solid 2px #284f7e;
     margin-left: 50px;
 }
@@ -109,12 +110,7 @@ td{
 td a{
     display: block;
     color: black;
-}
-
-td a:hover{
-    text-decoration: none;
-    color: white;
-    background-color: lightsteelblue;
+    padding: 4px 4px 4px 1%;
 }
 
 .placeholder{
