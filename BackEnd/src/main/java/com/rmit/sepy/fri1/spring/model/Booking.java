@@ -48,7 +48,7 @@ public class Booking {
     public void setId(Integer bookingId) { this.bookingId=bookingId; }
 
     public String getBookingName() {return bookingName; }
-    public void setId(String bookingName) { this.bookingName=bookingName; }
+    public void setBookingName(String bookingName) { this.bookingName=bookingName; }
 
     public String getWorkerName() {return workerName; }
     public void setWorkerName(String workerName) { this.workerName=workerName; }
