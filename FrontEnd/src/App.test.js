@@ -11,7 +11,7 @@ import Footer from "./components/Layout/Footer";
 
 
 /* 
- * Unit Test for App.js component
+ * Unit Test for "Appointment" text (Dashboard)
  * created by Jonathon Mitterbacher
 */
 test('renders footer text "Appointment" ', () => {
