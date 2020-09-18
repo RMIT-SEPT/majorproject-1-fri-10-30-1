@@ -11,7 +11,7 @@ import Footer from "./components/Layout/Footer";
 
 
 /* 
- * Unit Test for "Appointment" text (Dashboard)
+ * Unit Test for "Appointment" text displayed in Dashboard
  * created by Jonathon Mitterbacher
 */
 test('renders Welcome.js text "Appointment" ', () => {

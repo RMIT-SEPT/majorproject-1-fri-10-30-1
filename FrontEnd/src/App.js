@@ -15,6 +15,8 @@ import Welcome from './components/Welcome';
 import Services from "./components/Bookings/Services";
 import People from "./components/Bookings/People";
 import Availability from "./components/Bookings/Availability";
+import Login from "./components/Login/Login";
+import Register from "./components/Login/Register";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
         <Route exact path="/" component={Welcome} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/addPerson" component={AddPerson} />
+
+        {/*Log-In process*/}
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
 
         {/*Booking process*/}
         <Route exact path="/booking" component={Services} />

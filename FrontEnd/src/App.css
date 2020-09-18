@@ -142,3 +142,24 @@ div.bookingData{
     background-color: rgb(56, 56, 56);
     border-radius   : 10px;
 }
+
+form label{
+    margin-bottom: 1px;
+    font-weight: bold;
+    text-align: left;
+}
+form{
+    align-content: center;
+}
+
+.input-topmargin{
+    margin-top: 5px;
+}
+
+.form-content{
+    width: 182px;
+    margin: auto;
+    text-align: left;
+    /* width: auto; */
+    /* min-width: 200px; */
+}
