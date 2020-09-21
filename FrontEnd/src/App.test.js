@@ -11,10 +11,10 @@ import Footer from "./components/Layout/Footer";
 
 
 /* 
- * Unit Test for App.js component
+ * Unit Test for "Appointment" text displayed in Dashboard
  * created by Jonathon Mitterbacher
 */
-test('renders footer text "Appointment" ', () => {
+test('renders Welcome.js text "Appointment" ', () => {
   const { getByText } = render(<App />);
   const linkElement = getByText(/Appointment/i);
   expect(linkElement).toBeInTheDocument();
@@ -49,7 +49,6 @@ describe("<Header /> component Unit Test", () => {
   const props = {
       onClick: mockFn,
       completed: false
-      // text: "WHAT IS BUY MILK"
   };
   it("should render one <Header /> component", () =>{
       const component = shallow(<Header {...props} />);
@@ -67,7 +66,6 @@ describe("<Footer /> component Unit Test", () => {
   const props = {
       onClick: mockFn,
       completed: false
-      // text: "WHAT IS BUY MILK"
   };
   it("should render one <Footer /> component", () =>{
       const component = shallow(<Footer {...props} />);

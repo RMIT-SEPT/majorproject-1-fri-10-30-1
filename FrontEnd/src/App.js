@@ -15,6 +15,11 @@ import Welcome from './components/Welcome';
 import Services from "./components/Bookings/Services";
 import People from "./components/Bookings/People";
 import Availability from "./components/Bookings/Availability";
+import Login from "./components/Login/Login";
+import Register from "./components/Login/Register";
+
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -23,8 +28,15 @@ function App() {
     <div>
      <Header/>
         <Route exact path="/" component={Welcome} />
+        <Route exact path="/about" component={AboutUs} />
+        <Route exact path="/contact" component={Contact} />
+        
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/addPerson" component={AddPerson} />
+
+        {/*Log-In process*/}
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
 
         {/*Booking process*/}
         <Route exact path="/booking" component={Services} />
