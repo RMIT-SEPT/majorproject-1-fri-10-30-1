@@ -15,7 +15,7 @@ class ListBookingComponent extends Component {
 
     deleteBooking(id){
         BookingService.deleteBooking(id).then( res => {
-            this.setState({booking: this.state.booking.filter(booking => booking.id !== id)});
+            this.setState({bookings: this.state.bookings.filter(booking => booking.id !== id)});
         });
     }
     viewBooking(id){
@@ -27,7 +27,7 @@ class ListBookingComponent extends Component {
 
     componentDidMount(){
         BookingService.getBookings().then((res) => {
-            this.setState({ Booking: res.data});
+            this.setState({ bookings: res.data});
         });
     }
 
@@ -48,15 +48,15 @@ class ListBookingComponent extends Component {
 
                         <thead>
                         <tr>
-                            <th> Booking Name</th>
-                            <th> Worker Name</th>
-                            <th> Locations</th>
+                            <th> Booking</th>
+                            <th> Worker</th>
+                            <th> Location</th>
                             <th> Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         {
-                            this.state.booking.map(
+                            this.state.bookings.map(
                                 booking =>
                                     <tr key = {booking.id}>
                                         <td> {booking.bookingName} </td>

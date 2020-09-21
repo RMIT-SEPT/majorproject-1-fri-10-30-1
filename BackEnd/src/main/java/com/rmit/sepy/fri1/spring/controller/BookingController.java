@@ -39,7 +39,7 @@ public class BookingController {
     }
 
     @GetMapping("/booking/{id}")
-    public ResponseEntity < Booking > getBookingById(@PathVariable long id) {
+    public ResponseEntity < Booking > getBookingById(@PathVariable Long id) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();
         return ResponseEntity.ok(booking);
@@ -51,7 +51,7 @@ public class BookingController {
     }
 
     @PutMapping("/booking/{id}")
-    public ResponseEntity < Booking > updateBooking(@PathVariable long id, @RequestBody Booking bookingDetails) {
+    public ResponseEntity < Booking > updateBooking(@PathVariable Long id, @RequestBody Booking bookingDetails) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();
 
@@ -66,7 +66,7 @@ public class BookingController {
     }
 
     @DeleteMapping("/booking/{id}")
-    public ResponseEntity < Map < String, Boolean >> deleteBooking(@PathVariable long id) {
+    public ResponseEntity < Map < String, Boolean >> deleteBooking(@PathVariable Long id) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();
 

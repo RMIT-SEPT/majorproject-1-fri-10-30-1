@@ -22,7 +22,7 @@ public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "bookingName")
     private String bookingName;
@@ -45,7 +45,7 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(long id, String bookingName, String workerName) {
+    public Booking(Long id, String bookingName, String workerName) {
         super();
         this.id = id;
         this.bookingName = bookingName;
@@ -54,8 +54,8 @@ public class Booking {
 
 
 
-    public long getId() {return id; }
-    public void setId(long id) { this.id=id; }
+    public Long getId() {return id; }
+    public void setId(Long id) { this.id=id; }
 
     public String getBookingName() {return bookingName; }
     public void setBookingName(String bookingName) { this.bookingName=bookingName; }
