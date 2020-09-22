@@ -25,6 +25,11 @@ import React, { Component } from 'react'
                                 Bookings
                             </a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/contact-us">
+                                Contact Us
+                            </a>
+                        </li>
                     </ul>
     
                     <ul className="navbar-nav ml-auto">
