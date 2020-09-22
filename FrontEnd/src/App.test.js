@@ -39,6 +39,25 @@ describe("<Booking /> component Unit Test", () => {
     });
 })
 
+/* 
+ * Unit Test for Booking.js component(fail)
+ * tests if there are two booking components
+ * created by Jonathon Mitterbacher
+*/
+Enzyme.configure({ adapter: new Adapter() });
+describe("<Booking /> component Unit Test", () => {
+    const mockFn = jest.fn();
+    const props = {
+        onClick: mockFn,
+        completed: false
+        // text: "WHAT IS BUY MILK"
+    };
+    it("should fail with when there is only one <Booking /> component", () =>{
+        const component = shallow(<Booking {...props} />);
+        expect(component).toHaveLength(2);
+    });
+})
+
 
 /* 
  * Unit Test for Header.js component
