@@ -12,8 +12,9 @@
 ## Records
 
 * Github repository : https://github.com/RMIT-SEPT/majorproject-1-fri-10-30-1
-* ClickUp Workspace : N/A (Using Jira)
-* Jira Workspace    : https://septgroup1.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=SP&view=planning&selectedIssue=SP-11&issueLimit=100
+* ClickUp workspace : N/A (Using Jira)
+* Jira workspace    : https://septgroup1.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=SP&view=planning&selectedIssue=SP-11&issueLimit=100
+* Figma wireframes  : https://www.figma.com/file/5kiWzhIamYLPfKynCF7fYb/Booking-System?node-id=238014%3A498
 
 
 ## Code documentation
