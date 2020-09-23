@@ -7,13 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
-import java.sql.Time;
+
 
 @Entity
-@table(name = "booking")
+@Table(name = "booking")
 public class Booking {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     /* bookingID formula
        e.g. "2208202"
@@ -24,7 +22,7 @@ public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "bookingName")
     private String bookingName;
@@ -39,25 +37,25 @@ public class Booking {
     private Date date;
 
     @Column(name = "startTime")
-    private Time startTime;
+    private Integer startTime;
 
     @Column(name = "endTime")
-    private Time endTime;
+    private Integer endTime;
 
     public Booking() {
-
     }
 
-    public Booking(Integer bookingId, String bookingName, String workerName) {
+    public Booking(Long id, String bookingName, String workerName) {
         super();
-        this.bookingId = bookingId;
+        this.id = id;
         this.bookingName = bookingName;
         this.workerName = workerName;
     }
 
 
-    public Integer getId() {return bookingId; }
-    public void setId(Integer bookingId) { this.bookingId=bookingId; }
+
+    public Long getId() {return id; }
+    public void setId(Long id) { this.id=id; }
 
     public String getBookingName() {return bookingName; }
     public void setBookingName(String bookingName) { this.bookingName=bookingName; }
@@ -66,15 +64,15 @@ public class Booking {
     public void setWorkerName(String workerName) { this.workerName=workerName; }
 
     public String getLocation() {return location; }
-    public void setlocation(String location) { this.location=location; }
+    public void setLocation(String location) { this.location=location; }
 
     public Date getDate() {return date; }
     public void setDate(Date date) { this.date=date; }
 
-    public Time getStartTime() {return startTime; }
-    public void setStartTime(Time startTime) { this.startTime=startTime; }
+    public Integer getStartTime() {return startTime; }
+    public void setStartTime(Integer startTime) { this.startTime=startTime; }
 
-    public Time getEndTime() {return endTime; }
-    public void setEndTime(Time endTime) { this.endTime=endTime; }
+    public Integer getEndTime() {return endTime; }
+    public void setEndTime(Integer endTime) { this.endTime=endTime; }
 
 }
