@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BOOKING_API_BASE_URL = "http://localhost:8080/api/booking";
+const BOOKING_API_BASE_URL = "http://localhost:8080/api/booking/booking";
 
 class BookingService {
 
