@@ -19,7 +19,7 @@
 -- Table structure for table `booking`
 --
 
-DROP TABLE IF EXISTS `booking`;
+DROP TABLE IF EXISTS booking;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `booking` (
@@ -39,10 +39,10 @@ CREATE TABLE `booking` (
 -- Dumping data for table `booking`
 --
 
-LOCK TABLES `booking` WRITE;
-/*!40000 ALTER TABLE `booking` DISABLE KEYS */;
-INSERT INTO `booking` VALUES (1,'Scuba Test','Jono','Geelong','2020-08-25','2020-08-25 14:58:23','2020-08-25 16:58:26',false);
-/*!40000 ALTER TABLE `booking` ENABLE KEYS */;
+LOCK TABLES booking WRITE;
+/*!40000 ALTER TABLE booking DISABLE KEYS */;
+INSERT INTO booking VALUES (1,'Scuba Test','Jono','Geelong','2020-08-25','2020-08-25 14:58:23','2020-08-25 16:58:26',false);
+/*!40000 ALTER TABLE booking ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
