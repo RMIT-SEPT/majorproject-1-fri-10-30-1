@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Optional;
 
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/booking")
 @RestController
 public class BookingController {
@@ -44,6 +44,7 @@ public class BookingController {
         Booking booking = optionalEntity.get();
 
         booking.setBookingName(bookingDetails.getBookingName());
+        booking.setWorkerName(bookingDetails.getWorkerName());
         booking.setLocation(bookingDetails.getLocation());
         booking.setDate(bookingDetails.getDate());
         booking.setStartTime(bookingDetails.getStartTime());
