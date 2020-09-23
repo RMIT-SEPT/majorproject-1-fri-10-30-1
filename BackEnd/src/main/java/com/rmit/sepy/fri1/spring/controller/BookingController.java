@@ -12,10 +12,8 @@ import java.util.Map;
 import java.util.Optional;
 
 
-@CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/")
-//https://learnjava.co.in/how-to-create-springboot-rest-service-and-test-it-via-postman/
-//https://spring.io/guides/gs/accessing-data-mysql/
+@CrossOrigin
+@RequestMapping("/api/booking")
 @RestController
 public class BookingController {
 

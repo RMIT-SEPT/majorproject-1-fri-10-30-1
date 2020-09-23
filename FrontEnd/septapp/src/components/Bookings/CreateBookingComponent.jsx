@@ -33,18 +33,19 @@ class CreateBookingComponent extends Component {
             });
         }
     }
-    saveOrUpdateBooking = () => {
+    saveOrUpdateBooking = (b) => {
+        b.preventDefault();
         let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName, location: this.state.location};
         console.log('booking => ' + JSON.stringify(booking));
 
         // step 5
         if(this.state.id === '_add'){
             BookingService.createBooking(booking).then( (res) =>{
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
         }else{
             BookingService.updateBooking(booking, this.state.id).then( (res) => {
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
         }
     }
@@ -95,12 +96,12 @@ class CreateBookingComponent extends Component {
                                                value={this.state.workerName} onChange={this.changeWorkerNameHandler}/>
                                     </div>
                                     <div className = "form-group">
-                                        <label> Location: </label>
+                                        <label> Time: </label>
                                         <input placeholder="Location" name="location" className="form-control"
                                                value={this.state.location} onChange={this.changeLocationHandler}/>
                                     </div>
 
-                                    <button className="btn btn-success" onClick={this.saveOrUpdateBooking(this)}>Save</button>
+                                    <button className="btn btn-success" onClick={this.saveOrUpdateBooking}>Save</button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
                                 </form>
                             </div>
