@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rmit.sepy.fri1.spring.model.Booking;
 import com.rmit.sepy.fri1.spring.repository.BookingRepository;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,11 +21,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
-@CrossOrigin(origins = "http://localhost:3000")
-@RestController
-@RequestMapping("/api/")
-//https://learnjava.co.in/how-to-create-springboot-rest-service-and-test-it-via-postman/
-//https://spring.io/guides/gs/accessing-data-mysql/
+
+@CrossOrigin
+@RequestMapping("/api/booking")
 @RestController
 public class BookingController {
 
@@ -33,31 +31,31 @@ public class BookingController {
     private BookingRepository bookingRepository;
 
     @GetMapping("/booking")
-    public List<Booking> getAllbookings() {
+    public Iterable<Booking> getAllBookings() {
 
         return bookingRepository.findAll();
     }
 
     @GetMapping("/booking/{id}")
-    public ResponseEntity < Booking > getBookingById(@PathVariable long bookingId) {
-        Booking booking = bookingRepository.findById(id)
-                .orElseThrow(() - > new ResourceNotFindException("Employee not exist with id :" + id));
+    public ResponseEntity < Booking > getBookingById(@PathVariable Long id) {
+        Optional<Booking> optionalEntity = bookingRepository.findById(id);
+        Booking booking = optionalEntity.get();
         return ResponseEntity.ok(booking);
     }
 
-    @PostMapping("/booking")
-    public addbooking(@RequestBody Booking booking) {
+    @PostMapping("/bookingAdd")
+    public Booking addBooking(@RequestBody Booking booking) {
         return bookingRepository.save(booking);
     }
 
     @PutMapping("/booking/{id}")
     public ResponseEntity < Booking > updateBooking(@PathVariable Long id, @RequestBody Booking bookingDetails) {
-        Booking booking = bookingRepository.findById(id)
-                .orElseThrow(() - > new ResourceNotFoundException("Booking does not exist with id :" + id));
+        Optional<Booking> optionalEntity = bookingRepository.findById(id);
+        Booking booking = optionalEntity.get();
 
         booking.setBookingName(bookingDetails.getBookingName());
         booking.setLocation(bookingDetails.getLocation());
-        booking.setStartDate(bookingDetails.getStartDate());
+        booking.setDate(bookingDetails.getDate());
         booking.setStartTime(bookingDetails.getStartTime());
         booking.setEndTime(bookingDetails.getEndTime());
 
@@ -67,8 +65,8 @@ public class BookingController {
 
     @DeleteMapping("/booking/{id}")
     public ResponseEntity < Map < String, Boolean >> deleteBooking(@PathVariable Long id) {
-        Booking booking = bookingRepository.findById(id)
-                .orElseThrow(() - > new ResourceNotFoundException("Booking not exist with id :" + id));
+        Optional<Booking> optionalEntity = bookingRepository.findById(id);
+        Booking booking = optionalEntity.get();
 
         bookingRepository.delete(booking);
         Map < String, Boolean > response = new HashMap < > ();
