@@ -1,0 +1,48 @@
+Index: BackEnd/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n    <parent>\n        <groupId>org.springframework.boot</groupId>\n        <artifactId>spring-boot-starter-parent</artifactId>\n        <version>2.3.3.RELEASE</version>\n        <relativePath/> <!-- lookup parent from repository -->\n    </parent>\n    <groupId>com.rmit.sepy.fri1</groupId>\n    <artifactId>spring</artifactId>\n    <version>0.0.1-SNAPSHOT</version>\n    <name>spring</name>\n    <description>Group project for Spring Boot</description>\n\n    <properties>\n        <java.version>1.8</java.version>\n    </properties>\n\n    <dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-jpa</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-devtools</artifactId>\n            <scope>runtime</scope>\n            <optional>true</optional>\n        </dependency>\n        <dependency>\n            <groupId>mysql</groupId>\n            <artifactId>mysql-connector-java</artifactId>\n            <scope>runtime</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n            <exclusions>\n                <exclusion>\n                    <groupId>org.junit.vintage</groupId>\n                    <artifactId>junit-vintage-engine</artifactId>\n                </exclusion>\n            </exclusions>\n        </dependency>\n\n        <dependency>\n            <groupId>com.h2database</groupId>\n            <artifactId>h2</artifactId>\n            <scope>runtime</scope>\n        </dependency>\n        <dependency>\n            <groupId>ch.qos.logback</groupId>\n            <artifactId>logback-core</artifactId>\n            <version>1.2.3</version>\n            <scope>test</scope>\n        </dependency>\n        <dependency>\n            <groupId>mysql</groupId>\n            <artifactId>mysql-connector-java</artifactId>\n            <version>8.0.21</version>\n            <scope>test</scope>\n        </dependency>\n\n        <dependency>\n            <groupId>ch.qos.logback</groupId>\n            <artifactId>logback-classic</artifactId>\n            <version>1.2.3</version>\n        </dependency>\n        <dependency>\n            <groupId>ch.qos.logback</groupId>\n            <artifactId>logback-classic</artifactId>\n            <version>1.2.3</version>\n            <exclusions>\n                <exclusion>\n                    <groupId>org.slf4j</groupId>\n                    <artifactId>slf4j-log4j12</artifactId>\n\n                </exclusion>\n            </exclusions>\n        </dependency>\n\n        <dependency>\n            <groupId>ch.qos.logback</groupId>\n            <artifactId>logback-core</artifactId>\n            <version>1.2.3</version>\n        </dependency>\n        <dependency>\n            <groupId>mysql</groupId>\n            <artifactId>mysql-connector-java</artifactId>\n            <scope>runtime</scope>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-jdbc</artifactId>\n        </dependency>\n    </dependencies>\n\n\n    <build>\n        <plugins>\n            <plugin>\n                <groupId>org.springframework.boot</groupId>\n                <artifactId>spring-boot-maven-plugin</artifactId>\n            </plugin>\n        </plugins>\n    </build>\n\n</project>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- BackEnd/pom.xml	(revision 6a2a8ccd071585723ae6c51886042eb6057c6738)
++++ BackEnd/pom.xml	(date 1600825843653)
+@@ -102,6 +102,38 @@
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-data-jdbc</artifactId>
+         </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.testng</groupId>
++            <artifactId>testng</artifactId>
++            <version>RELEASE</version>
++            <scope>compile</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.testng</groupId>
++            <artifactId>testng</artifactId>
++            <version>RELEASE</version>
++            <scope>compile</scope>
++        </dependency>
+     </dependencies>
+ 
+ 

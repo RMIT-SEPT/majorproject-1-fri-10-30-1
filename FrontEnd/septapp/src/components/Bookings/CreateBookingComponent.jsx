@@ -96,7 +96,7 @@ class CreateBookingComponent extends Component {
                                                value={this.state.workerName} onChange={this.changeWorkerNameHandler}/>
                                     </div>
                                     <div className = "form-group">
-                                        <label> Time: </label>
+                                        <label> Booking: </label>
                                         <input placeholder="Location" name="location" className="form-control"
                                                value={this.state.location} onChange={this.changeLocationHandler}/>
                                     </div>
