@@ -22,8 +22,47 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75060c81-9bb7-4eac-ac00-0c56c04556e7" name="Default Changelist" comment="update booking">
+    <list default="true" id="75060c81-9bb7-4eac-ac00-0c56c04556e7" name="Default Changelist" comment="added config.yml">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/mysql-connector-java-5.1.49.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/Tests/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa62ef0e-d46a-4e88-9def-347d3ded515b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa62ef0e-d46a-4e88-9def-347d3ded515b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f16480ef-0280-47ef-af52-2bccf56e1c95.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f16480ef-0280-47ef-af52-2bccf56e1c95/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_1_android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/Tests/BookingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/Tests/BookingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/rmit/sepy/fri1/spring/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/rmit/sepy/fri1/spring/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/rmit/sepy/fri1/spring/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/rmit/sepy/fri1/spring/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/septapp/src/BookingService.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/septapp/src/BookingService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings/CreateBookingComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings/ListBookingComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings/ListBookingComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings/ViewBookingComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings/ViewBookingComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees.sql" beforeDir="false" afterPath="$PROJECT_DIR$/employees.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,19 +93,25 @@
     </option>
   </component>
   <component name="ProjectId" id="1hrA1D606VVh96fnqXAdv5eOVbA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/BackEnd/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,17 +120,76 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Tests" />
       <recent name="com.rmit.sepy.fri1.spring.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BackEnd/src" />
+      <recent name="$PROJECT_DIR$/BackEnd/src/main" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FrontEnd/septapp/src/components/Bookings" />
+    </key>
   </component>
   <component name="RunManager" selected="Maven.spring [spring-boot:run]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTests" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BookingTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/BackEnd" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="spring [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -111,6 +215,31 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="spring [test]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/BackEnd" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rmit.sepy.fri1.spring.Application" />
@@ -118,6 +247,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackEnd/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="BackEnd/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="agme" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="BackEnd/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.agme" />
+      <item itemvalue="Docker.BackEnd/Dockerfile" />
+      <item itemvalue="JUnit.BookingTests" />
+      <item itemvalue="Maven.spring [install]" />
+      <item itemvalue="Maven.spring [spring-boot:run]" />
+      <item itemvalue="Maven.spring [test]" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.BackEnd/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,6 +289,11 @@
       <workItem from="1600758633415" duration="1273000" />
       <workItem from="1600759980481" duration="15887000" />
       <workItem from="1600825557185" duration="164000" />
+      <workItem from="1600825800057" duration="16577000" />
+      <workItem from="1600940767956" duration="7991000" />
+      <workItem from="1600951887936" duration="4243000" />
+      <workItem from="1600957037056" duration="603000" />
+      <workItem from="1600957731530" duration="9116000" />
     </task>
     <task id="LOCAL-00001" summary="update booking">
       <created>1600778186016</created>
@@ -145,7 +309,35 @@
       <option name="project" value="LOCAL" />
       <updated>1600779099924</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="save">
+      <created>1600825933040</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600825933040</updated>
+    </task>
+    <task id="LOCAL-00004" summary="api fix">
+      <created>1600829346393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600829346393</updated>
+    </task>
+    <task id="LOCAL-00005" summary="api fix for bookings">
+      <created>1600839828806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600839828806</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added config.yml">
+      <created>1600948177947</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600948177947</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,8 +356,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update booking" />
-    <option name="LAST_COMMIT_MESSAGE" value="update booking" />
+    <MESSAGE value="save" />
+    <MESSAGE value="api fix" />
+    <MESSAGE value="api fix for bookings" />
+    <MESSAGE value="added config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added config.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="23" width="1920" height="991" key="#Assign_Data_Sources" timestamp="1600784330680">
@@ -176,57 +373,98 @@
       <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state x="448" y="100" key="#Project_Structure/0.23.1920.991@0.23.1920.991" timestamp="1600779217151" />
-    <state x="424" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600779792838">
+    <state x="424" y="180" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600958769074">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="424" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.991@0.23.1920.991" timestamp="1600779792838" />
+    <state x="209" y="47" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.724@0.23.1280.724" timestamp="1600908353329" />
+    <state x="424" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.991@0.23.1920.991" timestamp="1600958769074" />
+    <state x="629" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600846702959">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="629" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.991@0.23.1920.991" timestamp="1600846702959" />
+    <state x="698" y="301" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1601001229070">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="698" y="301" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1920.991@0.23.1920.991" timestamp="1601001229070" />
     <state x="737" y="420" width="452" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1600763912354">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state x="737" y="420" width="452" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1920.991@0.23.1920.991" timestamp="1600763912354" />
-    <state width="1878" height="189" key="GridCell.Tab.0.bottom" timestamp="1600785084352">
+    <state x="648" y="280" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1600943518004">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state width="1878" height="189" key="GridCell.Tab.0.bottom/0.23.1920.991@0.23.1920.991" timestamp="1600785084352" />
-    <state width="1878" height="189" key="GridCell.Tab.0.center" timestamp="1600785084351">
+    <state x="648" y="280" key="DUMP_DIALOG_DIMENSION_KEY/0.23.1920.991@0.23.1920.991" timestamp="1600943518004" />
+    <state x="603" y="259" key="DockerComposeFileDialog" timestamp="1600908344066">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="603" y="259" key="DockerComposeFileDialog/0.23.1280.724@0.23.1280.724" timestamp="1600908344066" />
+    <state width="1878" height="247" key="GridCell.Tab.0.bottom" timestamp="1600998592909">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state width="1878" height="189" key="GridCell.Tab.0.center/0.23.1920.991@0.23.1920.991" timestamp="1600785084351" />
-    <state width="1878" height="189" key="GridCell.Tab.0.left" timestamp="1600785084351">
+    <state width="1238" height="268" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1600910599290" />
+    <state width="1878" height="247" key="GridCell.Tab.0.bottom/0.23.1920.991@0.23.1920.991" timestamp="1600998592909" />
+    <state width="1878" height="247" key="GridCell.Tab.0.center" timestamp="1600998592908">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state width="1878" height="189" key="GridCell.Tab.0.left/0.23.1920.991@0.23.1920.991" timestamp="1600785084351" />
-    <state width="1878" height="189" key="GridCell.Tab.0.right" timestamp="1600785084352">
+    <state width="1238" height="268" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1600910599289" />
+    <state width="1878" height="247" key="GridCell.Tab.0.center/0.23.1920.991@0.23.1920.991" timestamp="1600998592908" />
+    <state width="1878" height="247" key="GridCell.Tab.0.left" timestamp="1600998592907">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state width="1878" height="189" key="GridCell.Tab.0.right/0.23.1920.991@0.23.1920.991" timestamp="1600785084352" />
+    <state width="1238" height="268" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1600910599289" />
+    <state width="1878" height="247" key="GridCell.Tab.0.left/0.23.1920.991@0.23.1920.991" timestamp="1600998592907" />
+    <state width="1878" height="247" key="GridCell.Tab.0.right" timestamp="1600998592909">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state width="1238" height="268" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1600910599289" />
+    <state width="1878" height="247" key="GridCell.Tab.0.right/0.23.1920.991@0.23.1920.991" timestamp="1600998592909" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1600779736173">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state width="221" height="457" key="HiddenNamespacesPopup/0.23.1920.991@0.23.1920.991" timestamp="1600779736173" />
-    <state x="498" y="180" key="Maven.ArtifactSearchDialog" timestamp="1600784452840">
+    <state x="498" y="180" key="Maven.ArtifactSearchDialog" timestamp="1600826340570">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="498" y="180" key="Maven.ArtifactSearchDialog/0.23.1920.991@0.23.1920.991" timestamp="1600784452840" />
-    <state x="759" y="177" key="SettingsEditor" timestamp="1600770896102">
+    <state x="498" y="180" key="Maven.ArtifactSearchDialog/0.23.1920.991@0.23.1920.991" timestamp="1600826340570" />
+    <state x="601" y="287" key="MultipleFileMergeDialog" timestamp="1600825956420">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="759" y="177" key="SettingsEditor/0.23.1920.991@0.23.1920.991" timestamp="1600770896102" />
-    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600778602342">
+    <state x="601" y="287" key="MultipleFileMergeDialog/0.23.1920.991@0.23.1920.991" timestamp="1600825956420" />
+    <state x="515" y="168" key="SettingsEditor" timestamp="1600958650566">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.23.1920.991@0.23.1920.991" timestamp="1600778602342" />
-    <state x="773" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600779134027">
+    <state x="515" y="168" key="SettingsEditor/0.23.1920.991@0.23.1920.991" timestamp="1600958650566" />
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1600948180717">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="773" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.991@0.23.1920.991" timestamp="1600779134027" />
-    <state x="722" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600784443604">
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.23.1920.991@0.23.1920.991" timestamp="1600948180717" />
+    <state x="762" y="303" key="chooseDestDirectoryDialog" timestamp="1600826103653">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="722" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1920.991@0.23.1920.991" timestamp="1600784443604" />
-    <state x="667" y="273" width="586" height="490" key="find.popup" timestamp="1600776879177">
+    <state x="762" y="303" key="chooseDestDirectoryDialog/0.23.1920.991@0.23.1920.991" timestamp="1600826103653" />
+    <state x="746" y="346" width="428" height="329" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1600947697211">
       <screen x="0" y="23" width="1920" height="991" />
     </state>
-    <state x="667" y="273" width="586" height="490" key="find.popup/0.23.1920.991@0.23.1920.991" timestamp="1600776879177" />
+    <state x="746" y="346" width="428" height="329" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.23.1920.991@0.23.1920.991" timestamp="1600947697211" />
+    <state x="829" y="263" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600947779061">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="829" y="263" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1920.991@0.23.1920.991" timestamp="1600947779061" />
+    <state x="773" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600958064682">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="773" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.991@0.23.1920.991" timestamp="1600958064682" />
+    <state x="722" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601001249615">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="722" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1920.991@0.23.1920.991" timestamp="1601001249615" />
+    <state x="1334" y="524" width="586" height="490" key="find.popup" timestamp="1600995329983">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="1334" y="524" width="586" height="490" key="find.popup/0.23.1920.991@0.23.1920.991" timestamp="1600995329983" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1600995318478">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1920.991@0.23.1920.991" timestamp="1600995318478" />
   </component>
 </project>

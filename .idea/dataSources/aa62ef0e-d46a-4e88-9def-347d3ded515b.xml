@@ -905,45 +905,86 @@ SELECT|sys.sys_config:null
 </ObjectGrants>
     </user>
     <table id="283" parent="2" name="booking"/>
-    <column id="284" parent="283" name="id">
+    <table id="284" parent="2" name="customer"/>
+    <column id="285" parent="283" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="285" parent="283" name="bookingName">
+    <column id="286" parent="283" name="bookingName">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="286" parent="283" name="workerName">
+    <column id="287" parent="283" name="workerName">
       <Position>3</Position>
       <DataType>varchar(40)|0s</DataType>
     </column>
-    <column id="287" parent="283" name="location">
+    <column id="288" parent="283" name="location">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="288" parent="283" name="startDate">
+    <column id="289" parent="283" name="startDate">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="289" parent="283" name="startTime">
+    <column id="290" parent="283" name="startTime">
       <Position>6</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="290" parent="283" name="endTime">
+    <column id="291" parent="283" name="endTime">
       <Position>7</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="291" parent="283" name="booked">
+    <column id="292" parent="283" name="booked">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <key id="292" parent="283" name="PRIMARY">
+    <key id="293" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+    </key>
+    <column id="294" parent="284" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="295" parent="284" name="create_At">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="296" parent="284" name="fullName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="297" parent="284" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="298" parent="284" name="update_At">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="299" parent="284" name="username">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <index id="300" parent="284" name="UK_jreodf78a7pl5qidfh43axdfb">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="301" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="302" parent="284" name="UK_jreodf78a7pl5qidfh43axdfb">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>UK_jreodf78a7pl5qidfh43axdfb</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

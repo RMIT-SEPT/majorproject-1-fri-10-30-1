@@ -48,9 +48,9 @@ class ListBookingComponent extends Component {
 
                         <thead>
                         <tr>
-                            <th> Booking</th>
+                            <th> Service</th>
                             <th> Worker</th>
-                            <th> Location</th>
+                            <th> Time</th>
                             <th> Actions</th>
                         </tr>
                         </thead>
@@ -64,7 +64,7 @@ class ListBookingComponent extends Component {
                                         <td> {booking.location}</td>
                                         <td>
                                             <button onClick={ () => this.editBooking(booking.id)} className="btn btn-info">Update </button>
-                                            <button style={{marginLeft: "10px"}} onClick={ () => this.deleteBooking(booking.id)} className="btn btn-danger">Delete </button>
+                                            <button style={{marginLeft: "10px"}} onClick={ () => this.deleteBooking(booking.id)} className="btn btn-danger">Cancel </button>
                                             <button style={{marginLeft: "10px"}} onClick={ () => this.viewBooking(booking.id)} className="btn btn-info">View </button>
                                         </td>
                                     </tr>

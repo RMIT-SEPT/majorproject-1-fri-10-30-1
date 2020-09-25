@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Optional;
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/api/booking")
 @RestController
 public class BookingController {
@@ -20,25 +20,25 @@ public class BookingController {
     @Autowired
     private BookingRepository bookingRepository;
 
-    @GetMapping("/booking")
+    @GetMapping("/All")
     public Iterable<Booking> getAllBookings() {
 
         return bookingRepository.findAll();
     }
 
-    @GetMapping("/booking/{id}")
+    @GetMapping("/Id/{id}")
     public ResponseEntity<Booking> getBookingById(@PathVariable Long id) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();
         return ResponseEntity.ok(booking);
     }
 
-    @PostMapping("/bookingAdd")
+    @PostMapping("/Add")
     public Booking addBooking(@RequestBody Booking booking) {
         return bookingRepository.save(booking);
     }
 
-    @PutMapping("/booking/{id}")
+    @PutMapping("/Update/{id}")
     public ResponseEntity<Booking> updateBooking(@PathVariable Long id, @RequestBody Booking bookingDetails) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();
@@ -54,7 +54,7 @@ public class BookingController {
         return ResponseEntity.ok(updatedBooking);
     }
 
-    @DeleteMapping("/booking/{id}")
+    @DeleteMapping("/Delete/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteBooking(@PathVariable Long id) {
         Optional<Booking> optionalEntity = bookingRepository.findById(id);
         Booking booking = optionalEntity.get();

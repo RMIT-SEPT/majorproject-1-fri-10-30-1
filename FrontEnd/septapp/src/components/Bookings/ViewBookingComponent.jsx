@@ -25,7 +25,7 @@ class ViewBookingComponent extends Component {
                     <h3 className = "text-center"> View Booking Details</h3>
                     <div className = "card-body">
                         <div className = "row">
-                            <label> Booking Name:  </label>
+                            <label> Service Name:  </label>
                             <div> { this.state.booking.bookingName }</div>
                         </div>
                         <div className = "row">
@@ -33,7 +33,7 @@ class ViewBookingComponent extends Component {
                             <div> { this.state.booking.workerName }</div>
                         </div>
                         <div className = "row">
-                            <label> Location:  </label>
+                            <label> Time:  </label>
                             <div> { this.state.booking.location }</div>
                         </div>
                     </div>
