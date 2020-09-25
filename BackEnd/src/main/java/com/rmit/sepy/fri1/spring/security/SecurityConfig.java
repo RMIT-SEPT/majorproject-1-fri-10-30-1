@@ -77,7 +77,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(SIGN_UP_URLS).permitAll()
                 //.antMatchers("/api/users/**").permitAll()
                 .antMatchers(H2_URL).permitAll()
-                .antMatchers("/api/booking/booking").permitAll()
+                .antMatchers("/api/**").permitAll()
+                .antMatchers("/api/booking/All").permitAll()
+                .antMatchers("/api/booking/Id/{id}").permitAll()
+                .antMatchers("/api/booking/Update/{id}").permitAll()
+                .antMatchers("/api/booking/Add").permitAll()
+                .antMatchers("/api/booking/Delete/{id}").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
