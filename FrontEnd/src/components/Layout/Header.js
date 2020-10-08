@@ -30,6 +30,11 @@ import React, { Component } from 'react'
                                 Contact Us
                             </a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/calendar">
+                                Calendar
+                            </a>
+                        </li>
                     </ul>
     
                     <ul className="navbar-nav ml-auto">

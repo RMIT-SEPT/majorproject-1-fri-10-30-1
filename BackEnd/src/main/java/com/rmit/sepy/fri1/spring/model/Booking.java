@@ -43,11 +43,14 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(Long id, String bookingName, String workerName) {
+    public Booking(Long id, String bookingName, String workerName, Date startDate, Time startTime, Time endTime) {
         super();
         this.id = id;
         this.bookingName = bookingName;
         this.workerName = workerName;
+        this.startDate = startDate;
+        this.startTime = startTime;
+        this.endTime = endTime;
     }
 
     public Long getId() {return id; }

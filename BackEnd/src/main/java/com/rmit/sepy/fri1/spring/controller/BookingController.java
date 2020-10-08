@@ -34,7 +34,7 @@ public class BookingController {
     }
 
     @PostMapping("/Add")
-    public Booking addBooking(@RequestBody Booking booking) {
+    public Booking createBooking(@RequestBody Booking booking) {
         return bookingRepository.save(booking);
     }
 
