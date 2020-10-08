@@ -45,8 +45,7 @@ public class BookingController {
 
         booking.setBookingName(bookingDetails.getBookingName());
         booking.setWorkerName(bookingDetails.getWorkerName());
-        booking.setLocation(bookingDetails.getLocation());
-        booking.setDate(bookingDetails.getDate());
+        booking.setStartDate(bookingDetails.getStartDate());
         booking.setStartTime(bookingDetails.getStartTime());
         booking.setEndTime(bookingDetails.getEndTime());
 

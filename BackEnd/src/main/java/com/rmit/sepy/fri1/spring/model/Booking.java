@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
+import java.sql.Time;
 
 
 @Entity
@@ -30,17 +31,14 @@ public class Booking {
     @Column(name = "workerName")
     private String workerName;
 
-    @Column(name = "location")
-    private String location;
-
     @Column(name = "startDate")
-    private Date date;
+    private Date startDate;
 
     @Column(name = "startTime")
-    private Integer startTime;
+    private Time startTime;
 
     @Column(name = "endTime")
-    private Integer endTime;
+    private Time endTime;
 
     public Booking() {
     }
@@ -52,8 +50,6 @@ public class Booking {
         this.workerName = workerName;
     }
 
-
-
     public Long getId() {return id; }
     public void setId(Long id) { this.id=id; }
 
@@ -63,16 +59,13 @@ public class Booking {
     public String getWorkerName() {return workerName; }
     public void setWorkerName(String workerName) { this.workerName=workerName; }
 
-    public String getLocation() {return location; }
-    public void setLocation(String location) { this.location=location; }
+    public Date getStartDate() {return startDate; }
+    public void setStartDate(Date startDate) { this.startDate=startDate; }
 
-    public Date getDate() {return date; }
-    public void setDate(Date date) { this.date=date; }
+    public Time getStartTime() {return startTime; }
+    public void setStartTime(Time startTime) { this.startTime=startTime; }
 
-    public Integer getStartTime() {return startTime; }
-    public void setStartTime(Integer startTime) { this.startTime=startTime; }
-
-    public Integer getEndTime() {return endTime; }
-    public void setEndTime(Integer endTime) { this.endTime=endTime; }
+    public Time getEndTime() {return endTime; }
+    public void setEndTime(Time endTime) { this.endTime=endTime; }
 
 }
