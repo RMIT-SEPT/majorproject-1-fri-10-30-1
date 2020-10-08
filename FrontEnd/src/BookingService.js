@@ -9,7 +9,7 @@ class BookingService {
     }
 
     createBooking(booking){
-        return axios.post(BOOKING_API_BASE_URL, + '/Add/' + booking);
+        return axios.post(BOOKING_API_BASE_URL + '/Add', booking);
     }
 
     getBookingById(id){

@@ -49,11 +49,11 @@ class CreateBookingComponent extends Component {
         // step 5
         if(this.state.id === 'Add'){
             BookingService.createBooking(booking).then( (res) =>{
-                this.props.history.push('/bookings');
+                this.props.history.push('/booking');
             });
         }else{
             BookingService.updateBooking(booking, this.state.id).then( (res) => {
-                this.props.history.push('/bookings');
+                this.props.history.push('/booking');
             });
         }
     }
