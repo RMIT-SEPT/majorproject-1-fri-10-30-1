@@ -10,14 +10,12 @@ class CreateBookingComponent extends Component {
             id: this.props.match.params.id,
             bookingName: '',
             workerName: '',
-            location: '',
             startDate: '',
             startTime: '',
             endTime: ''
         }
         this.changeBookingNameHandler = this.changeBookingNameHandler.bind(this);
         this.changeWorkerNameHandler = this.changeWorkerNameHandler.bind(this);
-        this.changeLocationHandler = this.changeLocationHandler.bind(this);
         this.changeStartDateHandler = this.changeStartDateHandler.bind(this);
         this.changeStartTimeHandler = this.changeStartTimeHandler.bind(this);
         this.changeEndTimeHandler = this.changeEndTimeHandler.bind(this);
@@ -35,7 +33,6 @@ class CreateBookingComponent extends Component {
                 let booking = res.data;
                 this.setState({bookingName: booking.bookingName,
                     workerName: booking.workerName,
-                    location: booking.location,
                     startDate: booking.startDate,
                     startTime: booking.startTime,
                     endTime: booking.endTime 
@@ -45,7 +42,7 @@ class CreateBookingComponent extends Component {
     }
     saveOrUpdateBooking = (b) => {
         b.preventDefault();
-        let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName,location: this.state.location, startDate: this.state.startDate,
+        let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName,startDate: this.state.startDate,
             startTime: this.state.startTime, endTime: this.state.endTime};
         console.log('booking => ' + JSON.stringify(booking));
 
