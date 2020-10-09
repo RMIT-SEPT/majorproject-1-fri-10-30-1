@@ -35,15 +35,15 @@ public class Booking {
     private Date startDate;
 
     @Column(name = "startTime")
-    private Time startTime;
+    private String startTime;
 
     @Column(name = "endTime")
-    private Time endTime;
+    private String endTime;
 
     public Booking() {
     }
 
-    public Booking(Long id, String bookingName, String workerName, Date startDate, Time startTime, Time endTime) {
+    public Booking(Long id, String bookingName, String workerName, Date startDate, String startTime, String endTime) {
         super();
         this.id = id;
         this.bookingName = bookingName;
@@ -65,10 +65,10 @@ public class Booking {
     public Date getStartDate() {return startDate; }
     public void setStartDate(Date startDate) { this.startDate=startDate; }
 
-    public Time getStartTime() {return startTime; }
-    public void setStartTime(Time startTime) { this.startTime=startTime; }
+    public String getStartTime() {return startTime; }
+    public void setStartTime(String startTime) { this.startTime=startTime; }
 
-    public Time getEndTime() {return endTime; }
-    public void setEndTime(Time endTime) { this.endTime=endTime; }
+    public String getEndTime() {return endTime; }
+    public void setEndTime(String endTime) { this.endTime=endTime; }
 
 }
