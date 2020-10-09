@@ -10,12 +10,14 @@ class CreateBookingComponent extends Component {
             id: this.props.match.params.id,
             bookingName: '',
             workerName: '',
+            location: '',
             startDate: '',
             startTime: '',
             endTime: ''
         }
         this.changeBookingNameHandler = this.changeBookingNameHandler.bind(this);
         this.changeWorkerNameHandler = this.changeWorkerNameHandler.bind(this);
+        this.changeLocationHandler = this.changeLocationHandler.bind(this);
         this.changeStartDateHandler = this.changeStartDateHandler.bind(this);
         this.changeStartTimeHandler = this.changeStartTimeHandler.bind(this);
         this.changeEndTimeHandler = this.changeEndTimeHandler.bind(this);
@@ -33,6 +35,7 @@ class CreateBookingComponent extends Component {
                 let booking = res.data;
                 this.setState({bookingName: booking.bookingName,
                     workerName: booking.workerName,
+                    location: booking.location,
                     startDate: booking.startDate,
                     startTime: booking.startTime,
                     endTime: booking.endTime 
@@ -42,7 +45,7 @@ class CreateBookingComponent extends Component {
     }
     saveOrUpdateBooking = (b) => {
         b.preventDefault();
-        let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName, startDate: this.state.startDate, 
+        let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName,location: this.state.location, startDate: this.state.startDate,
             startTime: this.state.startTime, endTime: this.state.endTime};
         console.log('booking => ' + JSON.stringify(booking));
 
@@ -51,7 +54,8 @@ class CreateBookingComponent extends Component {
             BookingService.createBooking(booking).then( (res) =>{
                 this.props.history.push('/booking');
             });
-        } else {
+                // .catch((error) => console.log( error.response.request.response ) );;
+        }else{
             BookingService.updateBooking(booking, this.state.id).then( (res) => {
                 this.props.history.push('/booking');
             });
@@ -65,7 +69,9 @@ class CreateBookingComponent extends Component {
     changeWorkerNameHandler= (event) => {
         this.setState({workerName: event.target.value});
     }
-
+    changeLocationHandler =  (event) => {
+        this.setState({location: event.target.value});
+    }
     changeStartDateHandler= (event) => {
         this.setState({startDate: event.target.value});
     }
@@ -73,7 +79,6 @@ class CreateBookingComponent extends Component {
     changeStartTimeHandler= (event) => {
         this.setState({startTime: event.target.value});
     }
-
     changeEndTimeHandler= (event) => {
         this.setState({endTime: event.target.value});
     }
@@ -111,19 +116,25 @@ class CreateBookingComponent extends Component {
                                         <input placeholder="Worker Name" name="workerName" className="form-control"
                                                value={this.state.workerName} onChange={this.changeWorkerNameHandler}/>
                                     </div>
+
+                                    <div className = "form-group">
+                                        <label> Location: </label>
+                                        <input placeholder="Worker Name" name="workerName" className="form-control"
+                                               value={this.state.location} onChange={this.changeLocationHandler}/>
+                                    </div>
                                     <div className = "form-group">
                                         <label> Date: </label>
-                                        <input placeholder="YYYY-MM-DD" name="startDate" className="form-control"
+                                        <input type="date" name="startDate" className="form-control"
                                                value={this.state.startDate} onChange={this.changeStartDateHandler}/>
                                     </div>
                                     <div className = "form-group">
                                         <label> Start Time: </label>
-                                        <input placeholder="HH:MM" name="startTime" className="form-control"
+                                        <input type="time" name="startTime" className="form-control"
                                                value={this.state.startTime} onChange={this.changeStartTimeHandler}/>
                                     </div>
                                     <div className = "form-group">
                                         <label> End Time: </label>
-                                        <input placeholder="HH:MM" name="endTime" className="form-control"
+                                        <input type="time" name="endTime" className="form-control"
                                                value={this.state.endTime} onChange={this.changeEndTimeHandler}/>
                                     </div>
 

@@ -28,8 +28,8 @@ CREATE TABLE `booking` (
   `workerName` varchar(40) NOT NULL,
   `location` varchar(255) NOT NULL,
   `startDate` date NOT NULL,
-  `startTime` datetime NOT NULL,
-  `endTime` datetime NOT NULL,
+  `startTime` time NOT NULL,
+  `endTime` time NOT NULL,
   `booked` boolean NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
