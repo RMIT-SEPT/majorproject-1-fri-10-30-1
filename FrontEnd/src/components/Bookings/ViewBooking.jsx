@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BookingService from "../../BookingService";
 
-class ViewBookingComponent extends Component {
+class ViewBooking extends Component {
     constructor(props) {
         super(props)
 
@@ -52,4 +52,4 @@ class ViewBookingComponent extends Component {
     }
 }
 
-export default ViewBookingComponent;
+export default ViewBooking;

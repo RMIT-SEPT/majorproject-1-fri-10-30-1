@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BookingService from "../../BookingService";
 
-class CreateBookingComponent extends Component {
+class CreateBooking extends Component {
     constructor(props) {
         super(props)
 
@@ -52,12 +52,12 @@ class CreateBookingComponent extends Component {
         // step 5
         if(this.state.id === 'Add'){
             BookingService.createBooking(booking).then( (res) =>{
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
                 // .catch((error) => console.log( error.response.request.response ) );;
         }else{
             BookingService.updateBooking(booking, this.state.id).then( (res) => {
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
         }
     }
@@ -145,4 +145,4 @@ class CreateBookingComponent extends Component {
     }
 }
 
-export default CreateBookingComponent;
+export default CreateBooking;

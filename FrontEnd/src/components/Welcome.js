@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Person from './Persons/Person'
-import CreatePersonButton from './Persons/CreatePersonButton';
 
 class Welcome extends Component {
     render() {
@@ -9,14 +7,11 @@ class Welcome extends Component {
                 <div className="container-content">
                     <h2>Welcome</h2>
                     <p>Online Appointment Booking System</p>
-                    <a href="/login">
-                        <button>Login</button>
-                    </a>
 
                     <br></br>
 
-                    <a href="/register">
-                        <button>Register</button>
+                    <a href="/bookings">
+                        <button>Bookings</button>
                     </a>
                 </div>
             </div>
