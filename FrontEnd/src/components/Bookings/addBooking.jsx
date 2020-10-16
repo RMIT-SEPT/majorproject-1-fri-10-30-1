@@ -89,7 +89,7 @@ class CreateBookingComponent extends Component {
 
     getTitle(){
         if(this.state.id === 'Add'){
-            return <h3 className="text-center">Create Booking</h3>
+            return <h3 className="text-center">New Booking</h3>
         }else{
             return <h3 className="text-center">Update Booking</h3>
         }

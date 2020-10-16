@@ -48,6 +48,11 @@ import React, { Component } from 'react'
                                 Login
                             </a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/profile">
+                                Profile
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
