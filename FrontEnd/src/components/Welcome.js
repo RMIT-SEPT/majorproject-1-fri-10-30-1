@@ -4,12 +4,13 @@ class Welcome extends Component {
     render() {
         return (
             <div>
+                //deafult homepage
                 <div className="container-content">
                     <h2>Welcome</h2>
                     <p>Online Appointment Booking System</p>
 
                     <br></br>
-
+                    //link to bookings page
                     <a href="/bookings">
                         <button>Bookings</button>
                     </a>
