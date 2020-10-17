@@ -3,6 +3,7 @@ import React, { Component } from 'react'
  class Header extends Component {
     render() {
         return (
+            //All items in the nav bar with link names
             <div>
             <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
             <div className="container">
