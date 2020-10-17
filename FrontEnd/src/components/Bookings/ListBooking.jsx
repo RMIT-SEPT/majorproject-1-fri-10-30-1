@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BookingService from "../../BookingService";
 
 class ListBooking extends Component {
+    //Declared our state variables and bind the different methods so that they are accessible from the state inside of the render() method
     constructor(props) {
         super(props)
 
@@ -13,24 +14,29 @@ class ListBooking extends Component {
         this.deleteBooking = this.deleteBooking.bind(this);
     }
 
+    //On the click of the Delete button, we use filter() method of an array to filter out the deleted booking
     deleteBooking(id){
         BookingService.deleteBooking(id).then( res => {
             this.setState({bookings: this.state.bookings.filter(booking => booking.id !== id)});
         });
     }
+    //On the click of the View button, we will navigate to View Booking page using the following code
     viewBooking(id){
         this.props.history.push(`/view-booking/${id}`);
     }
+    //On the click of the Update button, we will navigate to the Update Booking page using the following code
     editBooking(id){
         this.props.history.push(`/add-booking/${id}`);
     }
-
+    //ComponentDidMount() is executed when the component is mounted for the first time
+    //Invokes the service class method to fetch the bookings from the API call and populates the state variable bookings
     componentDidMount(){
         BookingService.getBookings().then((res) => {
             this.setState({ bookings: res.data});
         });
     }
 
+    //On the click of the Add Booking button, we will navigate to Add Booking page using the following code
     addBooking(){
         this.props.history.push('/add-booking/Add');
     }
@@ -56,6 +62,7 @@ class ListBooking extends Component {
                             <th> Actions</th>
                         </tr>
                         </thead>
+                        //We are using the ES6 feature that is map operator to loop over our bookings list and create the view
                         <tbody>
                         {
                             this.state.bookings.map(
