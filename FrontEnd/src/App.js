@@ -16,9 +16,11 @@ function App() {
     return (
         <div>
             <Router>
+                //Displays header on webpage
                 <Header/>
                 <div className="container">
                     <Switch>
+                        //All the navigations
                         <Route path = "/" exact component = {Welcome}></Route>
                         <Route path = "/bookings" component = {ListBooking}></Route>
                         <Route path = "/add-booking/:id" component = {CreateBooking}></Route>
@@ -29,6 +31,7 @@ function App() {
                         <Route path = "/profile" component = {UserProfile}></Route>
                     </Switch>
                 </div>
+                //Displays footer on webpage
                 <Footer/>
             </Router>
         </div>
