@@ -4,6 +4,7 @@ import com.rmit.sepy.fri1.spring.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+//Defines the API for users
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 
