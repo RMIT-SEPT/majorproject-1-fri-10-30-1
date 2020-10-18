@@ -8,11 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BookingTests {
 
     @Test
-    public void getId() {
+    void getId() {
+        Booking booking = new Booking();
+        assertEquals(3, booking.getId());
     }
 
     @Test
-    public void setId() {
+    void setId() {
+        Booking booking = new Booking();
+        booking.setId(1);
+        assertEquals(1, booking.getId());
     }
 
     //Jamaine George
@@ -46,34 +51,41 @@ public class BookingTests {
     }
 
     @Test
-    public void getLocation() {
+    void getStartTime() {
+        Booking driving = new Booking();
+        assertEquals("11:30", driving.getStartTime());
     }
 
     @Test
-    public void setLocation() {
+    void setStartTime() {
+        Booking driving = new Booking();
+        driving.setStartTime("11:30");
+        assertEquals("11:30", driving.getStartTime());
     }
 
     @Test
-    public void getDate() {
+    void getEndTime() {
+        Booking driving = new Booking();
+        assertEquals("11:30", driving.getEndTime());
     }
 
     @Test
-    public void setDate() {
+    void setEndTime() {
+        Booking driving = new Booking();
+        driving.setEndTime("13:30");
+        assertEquals("13:30", driving.getEndTime());
     }
 
     @Test
-    public void getStartTime() {
+    void getDate() {
+        Booking diving = new Booking();
+        assertEquals("2020-10-8", diving.getDate());
     }
 
     @Test
-    public void setStartTime() {
-    }
-
-    @Test
-    public void getEndTime() {
-    }
-
-    @Test
-    public void setEndTime() {
+    void setDate() {
+        Booking diving = new Booking();
+        diving.setDate("2020-10-8");
+        assertEquals("2020-10-8", diving.getDate());
     }
 }

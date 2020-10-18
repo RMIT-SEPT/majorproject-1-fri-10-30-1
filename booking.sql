@@ -26,7 +26,6 @@ CREATE TABLE `booking` (
   `id` int NOT NULL AUTO_INCREMENT,
   `bookingName` varchar(100) NOT NULL,
   `workerName` varchar(40) NOT NULL,
-  `location` varchar(255) NOT NULL,
   `startDate` date NOT NULL,
   `startTime` varchar(100) NOT NULL,
   `endTime` varchar(100) NOT NULL,
@@ -40,7 +39,7 @@ CREATE TABLE `booking` (
 
 LOCK TABLES booking WRITE;
 /*!40000 ALTER TABLE booking DISABLE KEYS */;
-INSERT INTO booking VALUES (1,'Scuba Test','Jono','Geelong','2020-08-25','2020-08-25 14:58:23','2020-08-25 16:58:26',false);
+INSERT INTO booking VALUES (1,'Scuba Diving','Jonathan', '2020-08-25','13:00','14:00');
 /*!40000 ALTER TABLE booking ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
