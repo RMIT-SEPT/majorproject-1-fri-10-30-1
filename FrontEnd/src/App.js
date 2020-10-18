@@ -7,6 +7,8 @@ import CreateBooking from './components/Bookings/CreateBooking';
 import ViewBooking from './components/Bookings/ViewBooking';
 import ContactUs from './components/ContactUs';
 import Calendar from './components/Calendar';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
 import UserProfile from './components/Bookings/UserProfile';
 import AboutUs from './components/AboutUs';
 import Welcome from './components/Welcome';
@@ -16,11 +18,11 @@ function App() {
     return (
         <div>
             <Router>
-                //Displays header on webpage
+                {/* Displays header on webpage */}
                 <Header/>
                 <div className="container">
                     <Switch>
-                        //All the navigations
+                        {/* All the navigation urls */}
                         <Route path = "/" exact component = {Welcome}></Route>
                         <Route path = "/bookings" component = {ListBooking}></Route>
                         <Route path = "/add-booking/:id" component = {CreateBooking}></Route>
@@ -29,9 +31,11 @@ function App() {
                         <Route path = "/about-us" component = {AboutUs}></Route>
                         <Route path = "/calendar" component = {Calendar}></Route>
                         <Route path = "/profile" component = {UserProfile}></Route>
+                        <Route path = "/login" component = {Login}></Route>
+                        <Route path = "/sign-up" component = {SignUp}></Route>
                     </Switch>
                 </div>
-                //Displays footer on webpage
+                {/* Displays footer on webpage */}
                 <Footer/>
             </Router>
         </div>

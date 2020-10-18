@@ -90,7 +90,7 @@ class CreateBooking extends Component {
     }
     //cancel() method called and it will navigate the user to the bookings list page
     cancel(){
-        this.props.history.push('/');
+        this.props.history.push('/bookings');
     }
 
     //getTitle() method to get the title for Add and Booking page based on id:

@@ -40,12 +40,12 @@ import React, { Component } from 'react'
     
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link " href="register.html">
+                            <a className="nav-link " href="/sign-up">
                                 Sign Up
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="login.html">
+                            <a className="nav-link" href="login">
                                 Login
                             </a>
                         </li>

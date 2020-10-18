@@ -62,7 +62,7 @@ class ListBooking extends Component {
                             <th> Actions</th>
                         </tr>
                         </thead>
-                        //We are using the ES6 feature that is map operator to loop over our bookings list and create the view
+                        {/* We are using the ES6 feature that is map operator to loop over our bookings list and create the view */}
                         <tbody>
                         {
                             this.state.bookings.map(
