@@ -3,6 +3,7 @@ import React, { Component } from 'react'
  class Header extends Component {
     render() {
         return (
+            //All items in the nav bar with link names
             <div>
             <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
             <div className="container">
@@ -16,7 +17,7 @@ import React, { Component } from 'react'
                 <div className="collapse navbar-collapse" id="mobile-nav">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" href="/bookings">
                                 Bookings
                             </a>
                         </li>
@@ -39,12 +40,12 @@ import React, { Component } from 'react'
     
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link " href="register.html">
+                            <a className="nav-link " href="/sign-up">
                                 Sign Up
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="login.html">
+                            <a className="nav-link" href="login">
                                 Login
                             </a>
                         </li>

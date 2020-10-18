@@ -4,22 +4,22 @@ class AboutUs extends Component {
     render() {
         return (
             <div className="AboutUs">
-                <h1>About AGME</h1>
+                <h2>About AGME</h2>
                 <article>
                 <br></br>
-                    <h1>Frequently Asked Questions</h1>
+                    <h3><b>Frequently Asked Questions</b></h3>
                     <br></br>
-                    <h2>Q1. What is AGME?</h2>
-                    <p>AGME is a system to provide online booking services for their clients</p>
+                    <h3>Q1. What is AGME?</h3>
+                    <div className="aboutUsText">AGME is a system to provide online booking services for their clients</div>
                     <br></br>
-                    <h2>Q2. What is AGME?</h2>
-                    <p>AGME is a system to provide online booking services for their clients</p>
+                    <h3>Q2. Why should we use AGME?</h3>
+                    <div className="aboutUsText">AGME is a system to provide online booking services for their clients</div>
                     <br></br>
-                    <h2>Q3. What is AGME?</h2>
-                    <p>AGME is a system to provide online booking services for their clients</p>
+                    <h3>Q3. Where does my data get stored?</h3>
+                    <div className="aboutUsText">AGME is a system to provide online booking services for their clients</div>
                     <br></br>
-                    <h2>Q4. What is AGME?</h2>
-                    <p>AGME is a system to provide online booking services for their clients</p>
+                    <h3>Q4. Do you have future updates?</h3>
+                    <div className="aboutUsText">AGME is a system to provide online booking services for their clients</div>
                     <br></br>
                 </article>
             </div>

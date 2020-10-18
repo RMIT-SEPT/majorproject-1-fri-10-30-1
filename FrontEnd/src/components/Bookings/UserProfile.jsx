@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BookingService from "../../BookingService";
 
-class profile extends Component {
+class UserProfile extends Component {
     constructor(props) {
         super(props)
 
@@ -66,4 +66,4 @@ class profile extends Component {
     }
 }
 
-export default profile;
+export default UserProfile;

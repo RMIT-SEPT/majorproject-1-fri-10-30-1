@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import BookingService from "../../BookingService";
 
-class CreateBookingComponent extends Component {
+class CreateBooking extends Component {
+    //Declared our state variables and bind the different methods so that they are accessible from the state inside of the render() method
     constructor(props) {
         super(props)
 
@@ -27,6 +28,7 @@ class CreateBookingComponent extends Component {
     // step 3
     componentDidMount(){
 
+        //id is Add then we don't do anything else we retrieve booking by id using BookingService.getBookingById() method
         // step 4
         if(this.state.id === 'Add'){
             return
@@ -43,6 +45,8 @@ class CreateBookingComponent extends Component {
             });
         }
     }
+    //checks if the id is Add then we call BookingService.createBooking() method which internally makes a 
+    //REST API call to store booking data into MySQL database
     saveOrUpdateBooking = (b) => {
         b.preventDefault();
         let booking = {bookingName: this.state.bookingName, workerName: this.state.workerName,location: this.state.location, startDate: this.state.startDate,
@@ -52,12 +56,14 @@ class CreateBookingComponent extends Component {
         // step 5
         if(this.state.id === 'Add'){
             BookingService.createBooking(booking).then( (res) =>{
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
                 // .catch((error) => console.log( error.response.request.response ) );;
         }else{
+            //If id is any positive number then we call BookingService.updateBooking() method which internally makes a 
+            //REST API call to store updated booking data into MySQL database:
             BookingService.updateBooking(booking, this.state.id).then( (res) => {
-                this.props.history.push('/booking');
+                this.props.history.push('/bookings');
             });
         }
     }
@@ -82,11 +88,12 @@ class CreateBookingComponent extends Component {
     changeEndTimeHandler= (event) => {
         this.setState({endTime: event.target.value});
     }
-
+    //cancel() method called and it will navigate the user to the bookings list page
     cancel(){
-        this.props.history.push('/');
+        this.props.history.push('/bookings');
     }
 
+    //getTitle() method to get the title for Add and Booking page based on id:
     getTitle(){
         if(this.state.id === 'Add'){
             return <h3 className="text-center">Create Booking</h3>
@@ -145,4 +152,4 @@ class CreateBookingComponent extends Component {
     }
 }
 
-export default CreateBookingComponent;
+export default CreateBooking;

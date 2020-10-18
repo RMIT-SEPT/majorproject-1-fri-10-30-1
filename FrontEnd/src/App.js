@@ -1,34 +1,42 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import ListBookingComponent from './components/Bookings/ListBookingComponent';
+import ListBooking from './components/Bookings/ListBooking';
 import Header from './components/Layout/Header';
-import CreateBookingComponent from './components/Bookings/CreateBookingComponent';
-import ViewBookingComponent from './components/Bookings/ViewBookingComponent';
+import CreateBooking from './components/Bookings/CreateBooking';
+import ViewBooking from './components/Bookings/ViewBooking';
 import ContactUs from './components/ContactUs';
-import Calendar from './components/Bookings/Calendar';
-import profile from './components/Bookings/profile';
+import Calendar from './components/Calendar';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import UserProfile from './components/Bookings/UserProfile';
 import AboutUs from './components/AboutUs';
+import Welcome from './components/Welcome';
+import Footer from './components/Layout/Footer';
 
 function App() {
     return (
         <div>
             <Router>
+                {/* Displays header on webpage */}
                 <Header/>
                 <div className="container">
                     <Switch>
-                        <Route path = "/" exact component = {ListBookingComponent}></Route>
-                        <Route path = "/booking" component = {ListBookingComponent}></Route>
-                        <Route path = "/add-booking/:id" component = {CreateBookingComponent}></Route>
-                        <Route path = "/view-booking/:id" component = {ViewBookingComponent}></Route>
-                        {/* <Route path = "/update-booking/:id" component = {UpdateBookingComponent}></Route> */}
+                        {/* All the navigation urls */}
+                        <Route path = "/" exact component = {Welcome}></Route>
+                        <Route path = "/bookings" component = {ListBooking}></Route>
+                        <Route path = "/add-booking/:id" component = {CreateBooking}></Route>
+                        <Route path = "/view-booking/:id" component = {ViewBooking}></Route>
                         <Route path = "/contact-us" component = {ContactUs}></Route>
                         <Route path = "/about-us" component = {AboutUs}></Route>
                         <Route path = "/calendar" component = {Calendar}></Route>
-                        <Route path = "/profile" component = {profile}></Route>
+                        <Route path = "/profile" component = {UserProfile}></Route>
+                        <Route path = "/login" component = {Login}></Route>
+                        <Route path = "/sign-up" component = {SignUp}></Route>
                     </Switch>
                 </div>
-
+                {/* Displays footer on webpage */}
+                <Footer/>
             </Router>
         </div>
 

@@ -10,6 +10,7 @@ import java.sql.Date;
 
 
 @Entity
+//Links the model with MySQL table name
 @Table(name = "booking")
 public class Booking {
 
@@ -20,6 +21,7 @@ public class Booking {
        add booking count i.e. 3rd booking add 2 to id
      */
 
+    //All the attributes in the table, establishing datatypes
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -39,6 +41,7 @@ public class Booking {
     @Column(name = "endTime")
     private String endTime;
 
+    //Booking constructor
     public Booking() {
     }
 
@@ -51,8 +54,9 @@ public class Booking {
         this.startTime = startTime;
         this.endTime = endTime;
     }
-
+    //The get method returns the value of all the names
     public Long getId() {return id; }
+    //The set method takes the parameter and signs it to name variable
     public void setId(Long id) { this.id=id; }
 
     public String getBookingName() {return bookingName; }
