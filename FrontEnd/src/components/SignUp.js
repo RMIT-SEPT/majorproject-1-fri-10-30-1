@@ -6,7 +6,7 @@ class SignUp extends Component {
             <div className="Sign Up">
                 <h2>Sign Up</h2>
                 <br></br>
-                <div className="container loginForm">
+                <div className="container-login loginForm">
                     <form method='post' id="loginForm"/>
                     <label>Username </label>
                     <input type="text" id="username" required />
