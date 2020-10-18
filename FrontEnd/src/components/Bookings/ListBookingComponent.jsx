@@ -38,7 +38,7 @@ class ListBookingComponent extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">Your Bookings</h2>
+                <h2 className="text-center">All Bookings</h2>
                 <div className = "row">
                     <button className="btn btn-primary" onClick={this.addBooking}>New Booking</button>
                 </div>

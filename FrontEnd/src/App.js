@@ -7,6 +7,8 @@ import CreateBookingComponent from './components/Bookings/CreateBookingComponent
 import ViewBookingComponent from './components/Bookings/ViewBookingComponent';
 import ContactUs from './components/ContactUs';
 import Calendar from './components/Bookings/Calendar';
+import profile from './components/Bookings/profile';
+import AboutUs from './components/AboutUs';
 
 function App() {
     return (
@@ -21,7 +23,9 @@ function App() {
                         <Route path = "/view-booking/:id" component = {ViewBookingComponent}></Route>
                         {/* <Route path = "/update-booking/:id" component = {UpdateBookingComponent}></Route> */}
                         <Route path = "/contact-us" component = {ContactUs}></Route>
+                        <Route path = "/about-us" component = {AboutUs}></Route>
                         <Route path = "/calendar" component = {Calendar}></Route>
+                        <Route path = "/profile" component = {profile}></Route>
                     </Switch>
                 </div>
 

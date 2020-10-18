@@ -17,12 +17,12 @@ import React, { Component } from 'react'
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
                             <a className="nav-link" href="/">
-                                Dashboard
+                                Bookings
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
-                                Bookings
+                            <a className="nav-link" href="/calendar">
+                                Calendar
                             </a>
                         </li>
                         <li className="nav-item">
@@ -31,8 +31,8 @@ import React, { Component } from 'react'
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/calendar">
-                                Calendar
+                            <a className="nav-link" href="/about-us">
+                                About Us
                             </a>
                         </li>
                     </ul>
@@ -46,6 +46,11 @@ import React, { Component } from 'react'
                         <li className="nav-item">
                             <a className="nav-link" href="login.html">
                                 Login
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/profile">
+                                Profile
                             </a>
                         </li>
                     </ul>
