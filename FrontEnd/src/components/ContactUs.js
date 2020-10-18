@@ -25,7 +25,6 @@ class ContactUs extends Component {
                     <div id="submit-container">
                         <input type="submit" id="contact-submit"className="contactUsInput" value="Submit" />
                     </div>
-
                 </div>
             </div>
 
